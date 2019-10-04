@@ -194,7 +194,7 @@ function mostraRaquetes(){
 }
 
 function mostraBolinha(){
-  fill("red");
+  fill("black");
   noStroke();
   circle(xBolinha,yBolinha,diametro);
 }//Fim mostra Bolinha
