@@ -49,7 +49,7 @@ function setup() {
 
 //Um looping sempre, desenha o que tem dentro
 function draw() {
-  background("deepPink");    
+  background("deepSkyBlue");    
   stroke(255);
   strokeWeight(2);
   line(metadeTela, 0, metadeTela, alturaTela);
@@ -65,7 +65,7 @@ function telaInicial(){
   textAlign(CENTER);
   textSize(24);
   fill("Purple");
-  text("Ping Pong do Programador Gr3g0ry", metadeTela, alturaTela/2);
+  text("Ping Pong do Programador", metadeTela, alturaTela/2);
 }
 
 function jogar(){
@@ -88,10 +88,10 @@ function jogar(){
 }
 
 function letrasVenceu(){
-  fill("purple");
+  fill("red");
   rect(0,0,metadeTela, alturaTela);
   textSize(40);
-  fill("pink");
+  fill("Purple");
   textAlign(CENTER);
   text("Letras venceu", metadeTela/2, alturaTela/2);
 }
@@ -99,7 +99,7 @@ function setasVenceu(){
   fill("Purple");
   rect(metadeTela, 0, larguraTela, alturaTela);
   textSize(40);
-  fill("white");
+  fill("White");
   textAlign(CENTER); // 3/4*larguraTela
   text("Setas venceu", metadeTela + metadeTela/2, alturaTela/2);
 }
@@ -112,7 +112,7 @@ function mostraPlacar(){
   fill("Purple");
   text(meuPlacar, 3/4 * larguraTela, 30);
   
-  fill("pink");
+  fill("red");
   text(placarOponente, larguraTela/4, 30);
     
 }
@@ -189,12 +189,12 @@ function mostraRaquetes(){
   fill("Purple");
   rect(xMinhaRaquete, yMinhaRaquete, larguraRaquete, alturaRaquete);
   
-  fill("Orange");
+  fill("red");
   rect(xRaqueteOponente, yRaqueteOponente, larguraRaquete, alturaRaquete);
 }
 
 function mostraBolinha(){
-  fill("deepPink");
+  fill("pink");
   noStroke();
   circle(xBolinha,yBolinha,diametro);
 }//Fim mostra Bolinha
